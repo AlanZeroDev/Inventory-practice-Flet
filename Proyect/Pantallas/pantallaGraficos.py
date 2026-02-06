@@ -1,8 +1,6 @@
 import flet as ft
 
 import matplotlib.pyplot as plt
-from io import BytesIO
-import base64
 
 
 def carga_Graficos():
@@ -11,6 +9,7 @@ def carga_Graficos():
         controls=[
             ft.Text("EMPRESA - GRÁFICOS", size=20, weight="bold"),
             ft.TextField(label="Código a buscar"),
+            ft.TextField(label="Descripcion", read_only=True, bgcolor =ft.Colors.GREY_50,value = "Esperando Codigo"),
             ft.TextField(label="Intervalo Fecha"),
         ],
         visible=True,
